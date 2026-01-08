@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>房角石基督教会 | Cornerstone Christian Church of Serbia</title>
+    <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,8 +18,9 @@
   <style>
     body { font-family: 'Noto Sans SC', system-ui, -apple-system, sans-serif; }
     html { scroll-behavior: smooth; }
-    .lang-block { display: none; }
-    .lang-active { display: block; }
+.lang-block { display: none; }
+.lang-block.lang-active { display: block; }     /* 默认：块级显示 */
+span.lang-block.lang-active { display: inline; }/* span：行内显示（关键） */
     .lang-btn-active { background-color: #1e3a8a; color: #fff; border-color: #1e3a8a; }
   </style>
 </head>
@@ -142,194 +149,361 @@
       </div>
     </section>
 
-    <!-- News & Updates -->
-    <section id="news" class="bg-white border-t border-gray-100">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <div class="text-center mb-10">
-          <p class="text-sm font-semibold text-blue-900">NEWS</p>
-          <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
-            <span class="lang-block lang-active" data-lang="zh">最新消息与通知</span>
-            <span class="lang-block" data-lang="en">News & Updates</span>
-            <span class="lang-block" data-lang="sr">Vesti i Obaveštenja</span>
-          </h2>
+  <!-- News & Updates -->
+<section id="news" class="bg-white border-t border-gray-100">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <div class="text-center mb-10">
+      <p class="text-sm font-semibold text-blue-900">NEWS</p>
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
+        <span class="lang-block lang-active" data-lang="zh">最新消息与通知</span>
+        <span class="lang-block" data-lang="en">News & Updates</span>
+        <span class="lang-block" data-lang="sr">Vesti i Obaveštenja</span>
+      </h2>
+    </div>
+
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- Card 1 -->
+      <article class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-100 space-y-2">
+        <h3 class="text-lg font-semibold text-gray-900">
+          <span class="lang-block lang-active" data-lang="zh">主日崇拜更新</span>
+          <span class="lang-block" data-lang="en">Sunday Worship Update</span>
+          <span class="lang-block" data-lang="sr">Nedeljno bogosluženje</span>
+        </h3>
+
+        <p class="text-sm leading-relaxed text-gray-700 lang-block lang-active" data-lang="zh">
+          本周主日10:30崇拜后有爱宴，诚邀弟兄姊妹与新朋友一同参与。
+        </p>
+        <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="en">
+          This Sunday at 10:30 we will have lunch fellowship after worship. Friends are warmly welcome.
+        </p>
+        <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="sr">
+          Ove nedelje u 10:30 imamo zajednički ručak nakon bogosluženja. Dobrodošli ste.
+        </p>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-100 space-y-2">
+        <h3 class="text-lg font-semibold text-gray-900">
+          <span class="lang-block lang-active" data-lang="zh">装备课程</span>
+          <span class="lang-block" data-lang="en">Training Course</span>
+          <span class="lang-block" data-lang="sr">Obučavanje</span>
+        </h3>
+
+        <p class="text-sm leading-relaxed text-gray-700 lang-block lang-active" data-lang="zh">
+          周三晚青少年团契将开始“信仰基石”系列，鼓励家长与孩子一同参与。
+        </p>
+        <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="en">
+          Youth fellowship on Wednesday starts the "Foundations of Faith" series. Parents and teens are encouraged to join.
+        </p>
+        <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="sr">
+          Ove srede omladinsko zajedništvo počinje seriju "Temelji vere". Roditelji i mladi su dobrodošli.
+        </p>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-100 space-y-2">
+        <h3 class="text-lg font-semibold text-gray-900">
+          <span class="lang-block lang-active" data-lang="zh">线上祷告会</span>
+          <span class="lang-block" data-lang="en">Online Prayer Meeting</span>
+          <span class="lang-block" data-lang="sr">Online molitva</span>
+        </h3>
+
+        <p class="text-sm leading-relaxed text-gray-700 lang-block lang-active" data-lang="zh">
+          周五19:00 Zoom 线上祷告，链接请联系同工获取，期待与你同心祷告。
+        </p>
+        <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="en">
+          Friday 19:00 prayer on Zoom. Contact the team for the link; we look forward to praying with you.
+        </p>
+        <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="sr">
+          Petkom u 19:00 je molitva preko Zoom-a. Za link kontaktirajte tim; radujemo se zajedničkoj molitvi.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+   <!-- Schedule -->
+<section id="schedule" class="bg-gray-50 border-t border-gray-100">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <div class="text-center mb-10">
+      <p class="text-sm font-semibold text-blue-900">SCHEDULE</p>
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
+        <span class="lang-block lang-active" data-lang="zh">聚会时间</span>
+        <span class="lang-block" data-lang="en">Service Schedule</span>
+        <span class="lang-block" data-lang="sr">Raspored Službi</span>
+      </h2>
+    </div>
+
+    <div class="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <!-- Sunday -->
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 space-y-1">
+        <p class="text-sm text-blue-900 font-semibold">
+          <span class="lang-block lang-active" data-lang="zh">周日</span>
+          <span class="lang-block" data-lang="en">Sunday</span>
+          <span class="lang-block" data-lang="sr">Nedelja</span>
+        </p>
+        <h3 class="text-lg font-bold text-gray-900">10:30 – 12:30</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          <span class="lang-block lang-active" data-lang="zh">含午餐</span>
+          <span class="lang-block" data-lang="en">With Lunch Fellowship</span>
+          <span class="lang-block" data-lang="sr">Sa zajedničkim ručkom</span>
+        </p>
+      </div>
+
+      <!-- Tuesday -->
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 space-y-1">
+        <p class="text-sm text-blue-900 font-semibold">
+          <span class="lang-block lang-active" data-lang="zh">周二</span>
+          <span class="lang-block" data-lang="en">Tuesday</span>
+          <span class="lang-block" data-lang="sr">Utorak</span>
+        </p>
+        <h3 class="text-lg font-bold text-gray-900">09:30 – 11:00</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          <span class="lang-block lang-active" data-lang="zh">女性团契</span>
+          <span class="lang-block" data-lang="en">Women’s Fellowship</span>
+          <span class="lang-block" data-lang="sr">Žensko zajedništvo</span>
+        </p>
+      </div>
+
+      <!-- Wednesday -->
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 space-y-1">
+        <p class="text-sm text-blue-900 font-semibold">
+          <span class="lang-block lang-active" data-lang="zh">周三</span>
+          <span class="lang-block" data-lang="en">Wednesday</span>
+          <span class="lang-block" data-lang="sr">Sreda</span>
+        </p>
+        <h3 class="text-lg font-bold text-gray-900">17:00 – 19:00</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          <span class="lang-block lang-active" data-lang="zh">青少年团契</span>
+          <span class="lang-block" data-lang="en">Youth Fellowship</span>
+          <span class="lang-block" data-lang="sr">Omladinsko zajedništvo</span>
+        </p>
+      </div>
+
+      <!-- Friday -->
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 space-y-1">
+        <p class="text-sm text-blue-900 font-semibold">
+          <span class="lang-block lang-active" data-lang="zh">周五</span>
+          <span class="lang-block" data-lang="en">Friday</span>
+          <span class="lang-block" data-lang="sr">Petak</span>
+        </p>
+        <h3 class="text-lg font-bold text-gray-900">19:00 – 20:00</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          <span class="lang-block lang-active" data-lang="zh">线上祷告会（Zoom）</span>
+          <span class="lang-block" data-lang="en">Online Prayer (Zoom)</span>
+          <span class="lang-block" data-lang="sr">Molitva online (Zoom)</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Locations -->
+<section id="locations" class="bg-white border-t border-gray-100">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <div class="text-center mb-10">
+      <p class="text-sm font-semibold text-blue-900">LOCATIONS</p>
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
+        <span class="lang-block lang-active" data-lang="zh">聚会地点</span>
+        <span class="lang-block" data-lang="en">Locations</span>
+        <span class="lang-block" data-lang="sr">Lokacije</span>
+      </h2>
+    </div>
+
+    <div class="grid gap-6 sm:grid-cols-2">
+      <!-- Belgrade / HQ -->
+      <div class="bg-gray-50 p-5 rounded-lg border border-gray-100 shadow-sm space-y-2">
+        <h3 class="text-lg font-semibold text-gray-900">
+          <span class="lang-block lang-active" data-lang="zh">贝尔格莱德 / 总部</span>
+          <span class="lang-block" data-lang="en">Belgrade / Headquarters</span>
+          <span class="lang-block" data-lang="sr">Beograd / Sedište</span>
+        </h3>
+
+        <p class="text-sm leading-relaxed text-gray-700 lang-block lang-active" data-lang="zh">
+          70号中国批发商场，Jurija Gagarina 89/216，Novi Beograd<br>
+          联系人：项牧师 · 电话：
+          <a class="text-blue-800 font-semibold hover:underline" href="tel:+381659410118">+381 65 941 0118</a>
+        </p>
+        <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="en">
+          Block 70 Chinese Wholesale Market, Jurija Gagarina 89/216, Novi Beograd<br>
+          Contact: Pastor Xiang · Tel:
+          <a class="text-blue-800 font-semibold hover:underline" href="tel:+381659410118">+381 65 941 0118</a>
+        </p>
+        <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="sr">
+          Kineski veleprodajni centar Blok 70, Jurija Gagarina 89/216, Novi Beograd<br>
+          Kontakt: Pastor Sjang · Tel:
+          <a class="text-blue-800 font-semibold hover:underline" href="tel:+381659410118">+381 65 941 0118</a>
+        </p>
+
+        <a href="https://maps.app.goo.gl/5yg3Hka7Kn3bWNFn7"
+           target="_blank"
+           rel="noopener"
+           class="inline-flex items-center mt-1 text-blue-800 font-semibold hover:underline">
+          📍 <span class="lang-block lang-active" data-lang="zh">查看谷歌地图</span>
+          <span class="lang-block" data-lang="en">View on Google Maps</span>
+          <span class="lang-block" data-lang="sr">Pogledaj na Google mapi</span>
+        </a>
+      </div>
+
+      <!-- Fellowship Locations (NOT "Fellowships" ministry) -->
+      <div class="bg-gray-50 p-5 rounded-lg border border-gray-100 shadow-sm space-y-3">
+        <h3 class="text-lg font-semibold text-gray-900">
+          <span class="lang-block lang-active" data-lang="zh">分点聚会点</span>
+          <span class="lang-block" data-lang="en">Fellowship Locations</span>
+          <span class="lang-block" data-lang="sr">Lokacije zajedništava</span>
+        </h3>
+
+        <!-- Zrenjanin -->
+        <div class="space-y-1">
+          <p class="text-sm font-semibold text-gray-900">
+            <span class="lang-block lang-active" data-lang="zh">兹雷尼亚宁（Zrenjanin）</span>
+            <span class="lang-block" data-lang="en">Zrenjanin</span>
+            <span class="lang-block" data-lang="sr">Zrenjanin</span>
+          </p>
+
+          <p class="text-sm leading-relaxed text-gray-700 lang-block lang-active" data-lang="zh">
+            地址：9. Januara 1d, Zrenjanin<br>
+            联系人：刘弟兄 · 电话：
+            <a class="text-blue-800 font-semibold hover:underline" href="tel:+381698991777">+381 69 899 1777</a>
+          </p>
+          <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="en">
+            Address: 9. Januara 1d, Zrenjanin<br>
+            Contact: Brother Liu · Tel:
+            <a class="text-blue-800 font-semibold hover:underline" href="tel:+381698991777">+381 69 899 1777</a>
+          </p>
+          <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="sr">
+            Adresa: 9. Januara 1d, Zrenjanin<br>
+            Kontakt: Brat Liu · Tel:
+            <a class="text-blue-800 font-semibold hover:underline" href="tel:+381698991777">+381 69 899 1777</a>
+          </p>
         </div>
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <!-- 复制模板块：复制以下卡片并修改文字即可新增公告 -->
-          <article class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-100 space-y-2">
-            <h3 class="text-lg font-semibold text-gray-900">主日崇拜更新</h3>
-            <p class="text-sm leading-relaxed text-gray-700 lang-block lang-active" data-lang="zh">本周主日10:30崇拜后有爱宴，诚邀弟兄姊妹与新朋友一同参与。</p>
-            <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="en">This Sunday at 10:30 we will have lunch fellowship after worship. Friends are warmly welcome.</p>
-            <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="sr">Ove nedelje u 10:30 imamo zajednički ručak nakon bogosluženja. Dobrodošli ste.</p>
-          </article>
 
-          <article class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-100 space-y-2">
-            <h3 class="text-lg font-semibold text-gray-900">装备课程</h3>
-            <p class="text-sm leading-relaxed text-gray-700 lang-block lang-active" data-lang="zh">周三晚青少年团契将开始“信仰基石”系列，鼓励家长与孩子一同参与。</p>
-            <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="en">Youth fellowship on Wednesday starts the "Foundations of Faith" series. Parents and teens are encouraged to join.</p>
-            <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="sr">Ove srede omladinsko zajedništvo počinje seriju "Temelji vere". Roditelji i mladi su dobrodošli.</p>
-          </article>
+        <div class="border-t border-gray-200 my-2"></div>
 
-          <article class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-100 space-y-2">
-            <h3 class="text-lg font-semibold text-gray-900">线上祷告会</h3>
-            <p class="text-sm leading-relaxed text-gray-700 lang-block lang-active" data-lang="zh">周五19:00 Zoom 线上祷告，链接请联系同工获取，期待与你同心祷告。</p>
-            <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="en">Friday 19:00 prayer on Zoom. Contact the team for the link; we look forward to praying with you.</p>
-            <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="sr">Petkom u 19:00 je molitva preko Zoom-a. Za link kontaktirajte tim; radujemo se zajedničkoj molitvi.</p>
-          </article>
+        <!-- Šid -->
+        <div class="space-y-1">
+          <p class="text-sm font-semibold text-gray-900">
+            <span class="lang-block lang-active" data-lang="zh">希德（Šid）</span>
+            <span class="lang-block" data-lang="en">Šid</span>
+            <span class="lang-block" data-lang="sr">Šid</span>
+          </p>
+
+          <p class="text-sm leading-relaxed text-gray-700 lang-block lang-active" data-lang="zh">
+            地址：Ulica Nikole Vlaskog 1, 22240 Šid<br>
+            联系人：郭弟兄 · 电话：
+            <a class="text-blue-800 font-semibold hover:underline" href="tel:+38162359802">+381 62 359 802</a>
+          </p>
+          <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="en">
+            Address: Ulica Nikole Vlaskog 1, 22240 Šid<br>
+            Contact: Brother Guo · Tel:
+            <a class="text-blue-800 font-semibold hover:underline" href="tel:+38162359802">+381 62 359 802</a>
+          </p>
+          <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="sr">
+            Adresa: Ulica Nikole Vlaskog 1, 22240 Šid<br>
+            Kontakt: Brat Guo · Tel:
+            <a class="text-blue-800 font-semibold hover:underline" href="tel:+38162359802">+381 62 359 802</a>
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- Schedule -->
-    <section id="schedule" class="bg-gray-50 border-t border-gray-100">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <div class="text-center mb-10">
-          <p class="text-sm font-semibold text-blue-900">SCHEDULE</p>
-          <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
-            <span class="lang-block lang-active" data-lang="zh">聚会时间</span>
-            <span class="lang-block" data-lang="en">Service Schedule</span>
-            <span class="lang-block" data-lang="sr">Raspored Službi</span>
-          </h2>
+
+<!-- Contact -->
+<section id="contact" class="bg-gray-50 border-t border-gray-100">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <div class="text-center mb-10">
+      <p class="text-sm font-semibold text-blue-900">CONTACT</p>
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
+        <span class="lang-block lang-active" data-lang="zh">联系我们</span>
+        <span class="lang-block" data-lang="en">Contact</span>
+        <span class="lang-block" data-lang="sr">Kontakt</span>
+      </h2>
+    </div>
+
+    <!-- 2 列更平衡 -->
+    <div class="grid gap-4 sm:grid-cols-2">
+      <!-- Hospitality -->
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 flex flex-col space-y-3">
+        <h3 class="text-lg font-semibold text-gray-900">
+          <span class="lang-block lang-active" data-lang="zh">接待组</span>
+          <span class="lang-block" data-lang="en">Hospitality</span>
+          <span class="lang-block" data-lang="sr">Gostoprimstvo</span>
+        </h3>
+
+        <!-- Name -->
+        <p class="text-sm text-gray-700 font-medium">
+          <span class="lang-block lang-active" data-lang="zh">Richard</span>
+          <span class="lang-block" data-lang="en">Richard</span>
+          <span class="lang-block" data-lang="sr">Richard</span>
+        </p>
+
+        <!-- Email -->
+        <p class="text-sm">
+          <a class="text-blue-800 font-semibold hover:underline"
+             href="mailto:richard@cornerstonechurch.rs">
+            richard@cornerstonechurch.rs
+          </a>
+        </p>
+      </div>
+
+      <!-- Fellowships -->
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 flex flex-col space-y-3">
+        <h3 class="text-lg font-semibold text-gray-900">
+          <span class="lang-block lang-active" data-lang="zh">团契</span>
+          <span class="lang-block" data-lang="en">Fellowships</span>
+          <span class="lang-block" data-lang="sr">Zajedništva</span>
+        </h3>
+
+        <!-- Women -->
+        <div class="space-y-1">
+          <p class="text-sm text-gray-700 font-medium">
+            <span class="lang-block lang-active" data-lang="zh">女性团契 · 王姊妹</span>
+            <span class="lang-block" data-lang="en">Women’s Fellowship · Sister Wang</span>
+            <span class="lang-block" data-lang="sr">Žensko zajedništvo · Sestra Vang</span>
+          </p>
+          <p class="text-sm">
+            <a class="text-blue-800 font-semibold hover:underline"
+               href="mailto:sisters@cornerstonechurch.rs">
+              sisters@cornerstonechurch.rs
+            </a>
+          </p>
         </div>
-        <div class="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 space-y-1">
-            <p class="text-sm text-blue-900 font-semibold">Sunday</p>
-            <h3 class="text-lg font-bold text-gray-900">10:30 – 12:30</h3>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block lang-active" data-lang="zh">含午餐</p>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block" data-lang="en">With Lunch Fellowship</p>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block" data-lang="sr">Sa zajedničkim ručkom</p>
-          </div>
-          <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 space-y-1">
-            <p class="text-sm text-blue-900 font-semibold">Tuesday</p>
-            <h3 class="text-lg font-bold text-gray-900">09:30 – 11:00</h3>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block lang-active" data-lang="zh">女性团契</p>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block" data-lang="en">Women's Fellowship</p>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block" data-lang="sr">Žensko zajedništvo</p>
-          </div>
-          <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 space-y-1">
-            <p class="text-sm text-blue-900 font-semibold">Wednesday</p>
-            <h3 class="text-lg font-bold text-gray-900">17:00 – 19:00</h3>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block lang-active" data-lang="zh">青少年团契</p>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block" data-lang="en">Youth Fellowship</p>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block" data-lang="sr">Omladinsko zajedništvo</p>
-          </div>
-          <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 space-y-1">
-            <p class="text-sm text-blue-900 font-semibold">Friday</p>
-            <h3 class="text-lg font-bold text-gray-900">19:00 – 20:00</h3>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block lang-active" data-lang="zh">线上祷告会 Zoom</p>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block" data-lang="en">Online Prayer (Zoom)</p>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block" data-lang="sr">Molitva online (Zoom)</p>
-          </div>
+
+        <div class="border-t border-gray-100"></div>
+
+        <!-- Youth -->
+        <div class="space-y-1">
+          <p class="text-sm text-gray-700 font-medium">
+            <span class="lang-block lang-active" data-lang="zh">青少年团契 · 吴弟兄</span>
+            <span class="lang-block" data-lang="en">Youth Fellowship · Brother Wu</span>
+            <span class="lang-block" data-lang="sr">Omladinsko zajedništvo · Brat Vu</span>
+          </p>
+          <p class="text-sm">
+            <a class="text-blue-800 font-semibold hover:underline"
+               href="mailto:youth@cornerstonechurch.rs">
+              youth@cornerstonechurch.rs
+            </a>
+          </p>
         </div>
       </div>
-    </section>
-
-    <!-- Locations -->
-    <section id="locations" class="bg-white border-t border-gray-100">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <div class="text-center mb-10">
-          <p class="text-sm font-semibold text-blue-900">LOCATIONS</p>
-          <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
-            <span class="lang-block lang-active" data-lang="zh">聚会地点</span>
-            <span class="lang-block" data-lang="en">Locations</span>
-            <span class="lang-block" data-lang="sr">Lokacije</span>
-          </h2>
-        </div>
-        <div class="grid gap-6 sm:grid-cols-2">
-          <div class="bg-gray-50 p-5 rounded-lg border border-gray-100 shadow-sm space-y-1">
-            <h3 class="text-lg font-semibold text-gray-900">总部 / Headquarters</h3>
-<p class="text-sm leading-relaxed text-gray-700 lang-block lang-active" data-lang="zh">
-  新贝尔格莱德 70号批发市场 2楼 216<br>
-  <a href="https://maps.app.goo.gl/5yg3Hka7Kn3bWNFn7"
-     target="_blank"
-     rel="noopener"
-     class="inline-flex items-center mt-1 text-blue-800 font-semibold hover:underline">
-    📍 查看谷歌地图
-  </a>
-</p>
-
-<p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="en">
-  New Belgrade, Block 70 Wholesale Market, 2nd Floor, Room 216<br>
-  <a href="https://maps.app.goo.gl/5yg3Hka7Kn3bWNFn7"
-     target="_blank"
-     rel="noopener"
-     class="inline-flex items-center mt-1 text-blue-800 font-semibold hover:underline">
-    📍 View on Google Maps
-  </a>
-</p>
-
-<p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="sr">
-  Novi Beograd, Blok 70, pijaca, II sprat, soba 216<br>
-  <a href="https://maps.app.goo.gl/5yg3Hka7Kn3bWNFn7"
-     target="_blank"
-     rel="noopener"
-     class="inline-flex items-center mt-1 text-blue-800 font-semibold hover:underline">
-    📍 Pogledaj na Google mapi
-  </a>
-</p>
-
-          </div>
-          <div class="bg-gray-50 p-5 rounded-lg border border-gray-100 shadow-sm space-y-1">
-            <h3 class="text-lg font-semibold text-gray-900">分点 / Fellowships</h3>
-            <p class="text-sm leading-relaxed text-gray-700 lang-block lang-active" data-lang="zh">兹雷尼亚宁（Zrenjanin）</p>
-            <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="en">Zrenjanin</p>
-            <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="sr">Zrenjanin</p>
-            <p class="text-sm leading-relaxed text-gray-700 lang-block lang-active" data-lang="zh">希德（Šid）</p>
-            <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="en">Šid</p>
-            <p class="text-sm leading-relaxed text-gray-700 lang-block" data-lang="sr">Šid</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="bg-gray-50 border-t border-gray-100">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <div class="text-center mb-10">
-          <p class="text-sm font-semibold text-blue-900">CONTACT</p>
-          <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
-            <span class="lang-block lang-active" data-lang="zh">联系我们</span>
-            <span class="lang-block" data-lang="en">Contact</span>
-            <span class="lang-block" data-lang="sr">Kontakt</span>
-          </h2>
-        </div>
-        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 flex flex-col space-y-2">
-            <h3 class="text-lg font-semibold text-gray-900">
-              <span class="lang-block lang-active" data-lang="zh">接待组</span>
-              <span class="lang-block" data-lang="en">Hospitality</span>
-              <span class="lang-block" data-lang="sr">Gostoprimstvo</span>
-            </h3>
-            <p class="text-sm text-gray-700">A 弟兄 · +381 00 7777777 · a@fangjiaoshi.org</p>
-            <p class="text-sm text-gray-700">B 姊妹 · b@fangjiaoshi.org</p>
-          </div>
-          <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 flex flex-col space-y-2">
-            <h3 class="text-lg font-semibold text-gray-900">
-              <span class="lang-block lang-active" data-lang="zh">团契</span>
-              <span class="lang-block" data-lang="en">Fellowships</span>
-              <span class="lang-block" data-lang="sr">Zajedništva</span>
-            </h3>
-            <p class="text-sm text-gray-700">女性团契：C 姊妹</p>
-            <p class="text-sm text-gray-700">青少年团契：吴弟兄</p>
-          </div>
-          <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 flex flex-col space-y-2">
-            <h3 class="text-lg font-semibold text-gray-900">
-              <span class="lang-block lang-active" data-lang="zh">分点对接</span>
-              <span class="lang-block" data-lang="en">Local Contacts</span>
-              <span class="lang-block" data-lang="sr">Lokalni Kontakti</span>
-            </h3>
-            <p class="text-sm text-gray-700">兹雷尼亚宁：D 弟兄 · +381 00 7777777</p>
-            <p class="text-sm text-gray-700">希德：E 弟兄 · +381 00 7777777</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+    </div>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="bg-white border-t border-gray-100">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between text-sm text-gray-600">
       <p>© 2024 Serbian Cornerstone Christian Church</p>
-      <a href="#home" class="mt-3 sm:mt-0 inline-flex items-center text-blue-800 hover:text-blue-900 focus:ring-2 focus:ring-blue-600 px-3 py-2 rounded-md">返回顶部</a>
+      <a href="#home"
+   class="mt-3 sm:mt-0 inline-flex items-center text-blue-800 hover:text-blue-900 focus:ring-2 focus:ring-blue-600 px-3 py-2 rounded-md">
+  <span class="lang-block lang-active" data-lang="zh">返回顶部</span>
+  <span class="lang-block" data-lang="en">Back to top</span>
+  <span class="lang-block" data-lang="sr">Nazad na vrh</span>
+</a>
+
     </div>
   </footer>
 
