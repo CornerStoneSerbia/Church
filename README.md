@@ -1,2 +1,2 @@
-# Church
-Cornerstone Church Serbia – website &amp; digital resources
+# SCCC
+Serbian Cornerstone Christian Church
