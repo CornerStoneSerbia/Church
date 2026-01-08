@@ -12,8 +12,9 @@
   <style>
     body { font-family: 'Noto Sans SC', system-ui, -apple-system, sans-serif; }
     html { scroll-behavior: smooth; }
-    .lang-block { display: none; }
-    .lang-active { display: block; }
+.lang-block { display: none; }
+.lang-block.lang-active { display: block; }     /* 默认：块级显示 */
+span.lang-block.lang-active { display: inline; }/* span：行内显示（关键） */
     .lang-btn-active { background-color: #1e3a8a; color: #fff; border-color: #1e3a8a; }
   </style>
 </head>
@@ -179,49 +180,81 @@
       </div>
     </section>
 
-    <!-- Schedule -->
-    <section id="schedule" class="bg-gray-50 border-t border-gray-100">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <div class="text-center mb-10">
-          <p class="text-sm font-semibold text-blue-900">SCHEDULE</p>
-          <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
-            <span class="lang-block lang-active" data-lang="zh">聚会时间</span>
-            <span class="lang-block" data-lang="en">Service Schedule</span>
-            <span class="lang-block" data-lang="sr">Raspored Službi</span>
-          </h2>
-        </div>
-        <div class="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 space-y-1">
-            <p class="text-sm text-blue-900 font-semibold">Sunday</p>
-            <h3 class="text-lg font-bold text-gray-900">10:30 – 12:30</h3>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block lang-active" data-lang="zh">含午餐</p>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block" data-lang="en">With Lunch Fellowship</p>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block" data-lang="sr">Sa zajedničkim ručkom</p>
-          </div>
-          <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 space-y-1">
-            <p class="text-sm text-blue-900 font-semibold">Tuesday</p>
-            <h3 class="text-lg font-bold text-gray-900">09:30 – 11:00</h3>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block lang-active" data-lang="zh">女性团契</p>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block" data-lang="en">Women's Fellowship</p>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block" data-lang="sr">Žensko zajedništvo</p>
-          </div>
-          <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 space-y-1">
-            <p class="text-sm text-blue-900 font-semibold">Wednesday</p>
-            <h3 class="text-lg font-bold text-gray-900">17:00 – 19:00</h3>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block lang-active" data-lang="zh">青少年团契</p>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block" data-lang="en">Youth Fellowship</p>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block" data-lang="sr">Omladinsko zajedništvo</p>
-          </div>
-          <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 space-y-1">
-            <p class="text-sm text-blue-900 font-semibold">Friday</p>
-            <h3 class="text-lg font-bold text-gray-900">19:00 – 20:00</h3>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block lang-active" data-lang="zh">线上祷告会 Zoom</p>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block" data-lang="en">Online Prayer (Zoom)</p>
-            <p class="text-sm text-gray-700 leading-relaxed lang-block" data-lang="sr">Molitva online (Zoom)</p>
-          </div>
-        </div>
+   <!-- Schedule -->
+<section id="schedule" class="bg-gray-50 border-t border-gray-100">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <div class="text-center mb-10">
+      <p class="text-sm font-semibold text-blue-900">SCHEDULE</p>
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
+        <span class="lang-block lang-active" data-lang="zh">聚会时间</span>
+        <span class="lang-block" data-lang="en">Service Schedule</span>
+        <span class="lang-block" data-lang="sr">Raspored Službi</span>
+      </h2>
+    </div>
+
+    <div class="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <!-- Sunday -->
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 space-y-1">
+        <p class="text-sm text-blue-900 font-semibold">
+          <span class="lang-block lang-active" data-lang="zh">周日</span>
+          <span class="lang-block" data-lang="en">Sunday</span>
+          <span class="lang-block" data-lang="sr">Nedelja</span>
+        </p>
+        <h3 class="text-lg font-bold text-gray-900">10:30 – 12:30</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          <span class="lang-block lang-active" data-lang="zh">含午餐</span>
+          <span class="lang-block" data-lang="en">With Lunch Fellowship</span>
+          <span class="lang-block" data-lang="sr">Sa zajedničkim ručkom</span>
+        </p>
       </div>
-    </section>
+
+      <!-- Tuesday -->
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 space-y-1">
+        <p class="text-sm text-blue-900 font-semibold">
+          <span class="lang-block lang-active" data-lang="zh">周二</span>
+          <span class="lang-block" data-lang="en">Tuesday</span>
+          <span class="lang-block" data-lang="sr">Utorak</span>
+        </p>
+        <h3 class="text-lg font-bold text-gray-900">09:30 – 11:00</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          <span class="lang-block lang-active" data-lang="zh">女性团契</span>
+          <span class="lang-block" data-lang="en">Women’s Fellowship</span>
+          <span class="lang-block" data-lang="sr">Žensko zajedništvo</span>
+        </p>
+      </div>
+
+      <!-- Wednesday -->
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 space-y-1">
+        <p class="text-sm text-blue-900 font-semibold">
+          <span class="lang-block lang-active" data-lang="zh">周三</span>
+          <span class="lang-block" data-lang="en">Wednesday</span>
+          <span class="lang-block" data-lang="sr">Sreda</span>
+        </p>
+        <h3 class="text-lg font-bold text-gray-900">17:00 – 19:00</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          <span class="lang-block lang-active" data-lang="zh">青少年团契</span>
+          <span class="lang-block" data-lang="en">Youth Fellowship</span>
+          <span class="lang-block" data-lang="sr">Omladinsko zajedništvo</span>
+        </p>
+      </div>
+
+      <!-- Friday -->
+      <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 space-y-1">
+        <p class="text-sm text-blue-900 font-semibold">
+          <span class="lang-block lang-active" data-lang="zh">周五</span>
+          <span class="lang-block" data-lang="en">Friday</span>
+          <span class="lang-block" data-lang="sr">Petak</span>
+        </p>
+        <h3 class="text-lg font-bold text-gray-900">19:00 – 20:00</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          <span class="lang-block lang-active" data-lang="zh">线上祷告会（Zoom）</span>
+          <span class="lang-block" data-lang="en">Online Prayer (Zoom)</span>
+          <span class="lang-block" data-lang="sr">Molitva online (Zoom)</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Locations -->
 <section id="locations" class="bg-white border-t border-gray-100">
